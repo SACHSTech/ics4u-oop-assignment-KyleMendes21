@@ -17,17 +17,6 @@ public class Song {
     favourite = newFavourite;
   }
 
-  public void Favourites(Song song) {
-    if (favourites == false) {
-      Favourites.addSong(song);
-    }
-    favourites = true;
-  }
-
-  public void unfavourites() {
-    favourites = false;
-  }
-
   public String getName() {
     return name;
   }
@@ -42,6 +31,17 @@ public class Song {
 
   public String getRelease() {
     return release;
+  }
+
+  public void Favourites(Song song) {
+    if (favourites == false) {
+      Favourites.addSong(song);
+    }
+    favourites = true;
+  }
+
+  public void unfavourites() {
+    favourites = false;
   }
 
   public String getFavourites() {
