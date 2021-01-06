@@ -12,7 +12,7 @@ public class Spotify {
 
      String inputUser;
      String inputPass; 
-     int choice = 50004040;
+     int choice = 50004040; 
      String choice2;
      int iii = 0;
      int iiii = 0;
