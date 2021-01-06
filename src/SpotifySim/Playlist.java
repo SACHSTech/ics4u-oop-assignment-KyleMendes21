@@ -1,4 +1,6 @@
-package SpotifySim;
+package Spotify
+
+/*package SpotifySim;
 import java.util.ArrayList;
 import SpotifySim.Song;
 import SpotifySim.Songs;
@@ -59,4 +61,3 @@ public class Playlist extends Songs {
   }
 */
 
-}

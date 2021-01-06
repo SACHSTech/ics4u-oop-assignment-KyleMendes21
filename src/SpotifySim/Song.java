@@ -4,8 +4,69 @@ import SpotifySim.Songs;
 import SpotifySim.Albums;
 import SpotifySim.Playlist;
 import java.util.ArrayList;
-//import SpotifySim.Favourites;
+import SpotifySim.Favourites;
 
+public class Song {
+  private String name;
+  private String artist;
+  private String playlist;
+  private String album;
+  private String release;
+  private boolean favourites;
+  //private ArrayList<Song> Favourites;
+
+
+  public Song(String newName, String newArtist, String newRelease, String newPlaylist, String newAlbum, boolean newFavourites) {
+    name = newName;
+    artist = newArtist;
+    playlist = newPlaylist;
+    release = newRelease;
+    favourites = newFavourites;
+  }
+
+  public void favourites(Song song, Favourites favourite) {
+    if(favourites == false) {
+      favourite.addSong(song, favourite);
+    }
+    favourite = true;
+  }
+
+  public void unfavourite() {
+    favourite = false;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public String getArtist() {
+    return artist;
+  }
+
+  public getRelease() {
+    return release;
+  }
+
+  public getPlaylist() {
+    return playlist;
+  }
+
+  public getAlbum() {
+    return release;
+  }
+
+  public boolean getFavourites() {
+    return favourites;
+  }
+
+  public String toString() {
+    return name + " by " + artist + " released in " + release + " is in the playlist " + playlist + " and it is in the album " + album;
+  }
+}
+
+
+
+/*
 public class Song {
   private String name;
   private String artist;
@@ -15,13 +76,14 @@ public class Song {
   //private ArrayList<Song> Favourites;
 
 
-  public Song(String newName, String newArtist, String newRelease, String newPlaylist, boolean isfavourites) {
+  public Song(String newName, String newArtist, String newRelease, String newPlaylist, boolean newFavourites) {
     name = newName;
     artist = newArtist;
     playlist = newPlaylist;
     release = newRelease;
-    favourites = isfavourites;
+    favourites = newFavourites;
   }
+
 
 /*
   public void favourites(Song newSong) {
@@ -30,7 +92,7 @@ public class Song {
     }
     favourites = true;
   }
-*/
+
 
   public void unfavourites() {
     favourites = false;
@@ -77,6 +139,7 @@ public class Song {
     //return getName() + " by " + getArtist() + " released in " + getRelease() + " is in the playlist " + getPlaylist();
     return name + " by " + artist + " released in " + release + " is in the playlist " + playlist;
   }
+  */
 
 
 }
