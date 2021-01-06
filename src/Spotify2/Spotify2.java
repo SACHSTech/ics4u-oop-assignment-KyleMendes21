@@ -1,6 +1,9 @@
-package Spotify;
+package Spotify2;
 import java.io.*;
-import Spotify.Favourites;
+import SpotifySim.Songs;
+import SpotifySim.Albums;
+import SpotifySim.Playlist;
+import SpotifySim.Favourites;
 
 public class Song {
   private String name;
@@ -9,13 +12,26 @@ public class Song {
   private String release;
   private boolean favourites;
 
-  public Song(String newName, String newArtist, String newPlaylist, String newRelease,boolean newFavourites) {
+  public Song(String newName, String newArtist, String newPlaylist, String newRelease, boolean isfavourites) {
     name = newName;
     artist = newArtist;
     playlist = newPlaylist;
     release = newRelease;
-    favourite = newFavourite;
+    favourites = isfavourites;
   }
+
+  @Override
+  public void favourites(Song song) {
+    if (favourites == false) {
+      Favourites.addSong(song);
+    }
+    favourites = true;
+  }
+
+  public void unfavourites() {
+    favourites = false;
+  }
+  
 
   public String getName() {
     return name;
@@ -33,18 +49,7 @@ public class Song {
     return release;
   }
 
-  public void Favourites(Song song) {
-    if (favourites == false) {
-      Favourites.addSong(song);
-    }
-    favourites = true;
-  }
-
-  public void unfavourites() {
-    favourites = false;
-  }
-
-  public String getFavourites() {
+  public boolean getFavourites() {
     return favourites;
   }
 
@@ -61,11 +66,11 @@ public class Song {
   }
 
   public void setRelease(String newRelease){
-    release = newRelase;
+    release = newRelease;
   }
 
   public String toString() {
-    return getName() + " " + getArtist() + " " + getPlaylist() + " " + getRelease() + " " + getFavourites;
+    return getName() + " " + getArtist() + " " + getPlaylist() + " " + getRelease() + " " + getFavourites();
   }
 
 

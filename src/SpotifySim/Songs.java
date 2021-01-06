@@ -1,5 +1,5 @@
-package Spotify;
-import Spotify.Song;
+package SpotifySim;
+import SpotifySim.Song;
 import java.util.ArrayList;
 import java.io.*;
 

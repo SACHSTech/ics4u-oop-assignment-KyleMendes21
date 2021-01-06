@@ -1,7 +1,7 @@
-package Spotify;
+package SpotifySim;
 import java.io.*;
-import Spotify.Song;
-import Spotify.Playlist;
+import SpotifySim.Song;
+import SpotifySim.Playlist;
 
 public class User {
   private String username;

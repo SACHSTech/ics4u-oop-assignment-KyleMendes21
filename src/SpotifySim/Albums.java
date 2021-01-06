@@ -1,24 +1,24 @@
-package Spotify;
+package SpotifySim;
 import java.io.*;
 import java.util.ArrayList;
-import oop.Spotify.Song;
-import oop.Spotify.Songs;
+import SpotifySim.Song;
+import SpotifySim.Songs;
 
-public class Playlist extends Songs {
+public class Albums extends Songs {
   private String name;
   private int i = 0;
-  private Arraylist<Song> Songs = new ArrayList<Song>();
+  private ArrayList<Song> Songst = new ArrayList<Song>();
 
-  public Playlist(String setName) {
+  public Albums(String setName){
     name = setName;
   }
 
   public ArrayList getSongs() {
-    return Songs;
+    return Songst;
   }
 
   public void addSong(Song newSong) {
-    Songs.add(i, newSong);
+    Songst.add(i, newSong);
     i = i + 1;
   }
 
@@ -27,7 +27,6 @@ public class Playlist extends Songs {
   }
 
   public String toString() {
-    return name + " " + Songs;
+    return name + " " + Songst;
   }
-
 }
