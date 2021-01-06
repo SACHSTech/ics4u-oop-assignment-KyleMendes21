@@ -74,7 +74,8 @@ public class Song {
   }
 
   public String toString() {
-    return getName() + " by " + getArtist() + " released in " + getRelease() + " is in the playlist " + getPlaylist();
+    //return getName() + " by " + getArtist() + " released in " + getRelease() + " is in the playlist " + getPlaylist();
+    return name + " by " + artist + " released in " + release + " is in the playlist " + playlist;
   }
 
 

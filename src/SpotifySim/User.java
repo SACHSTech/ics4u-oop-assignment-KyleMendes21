@@ -19,6 +19,10 @@ public class User {
   public String getPassword() {
     return password;
   }
+
+  public String toString() {
+    return "Welcome back " + username + " we hope you enjoy your session";
+  }
 }
 
 

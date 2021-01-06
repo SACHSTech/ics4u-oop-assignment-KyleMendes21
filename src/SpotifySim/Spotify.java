@@ -9,6 +9,8 @@ import SpotifySim.Favourites;
 public class Spotify {
   public static void main(String[] args) throws IOException {
     //ArrayList <Song> Songst = new ArrayList <Song>();
+    User user1 = new User("KyleM21", "Hello123");
+    System.out.println(user1);
 
     Song Spirits = new Song("Spirits", "Strumbellas", "Mays 2020", "New", true);
     Song Selfish = new Song("Selfish", "Madison Beer", "June 2020", "Chilling", false);
