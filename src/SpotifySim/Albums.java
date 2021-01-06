@@ -4,19 +4,40 @@ import java.util.ArrayList;
 import SpotifySim.Song;
 import SpotifySim.Songs;
 
-public class Albums extends Songs {
+public class Albums extends Library {
   private String name;
-  private int i = 0;
-  private ArrayList<Song> Songst = new ArrayList<Song>();
+  private String artist;
+  private ArrayList<Song> Library = new ArrayList<Song>();
 
-  public Albums(String setName){
-    name = setName;
+  public Albums(String newName, String newArtist){
+    super(newName, newArtist);
   }
 
-  public ArrayList getSongs() {
-    return Songst;
+  public String getName() {
+    return name;
   }
 
+  public String getArtist() {
+    return artist;
+  }
+
+  public ArrayList addSong(Song newSong) {
+    Library = super.addSong(newSong);
+    return Library;
+  }
+
+  public ArrayList getLibrary() {
+    return Library;
+  }
+
+  public String toString() {
+    return name + " " + Library;
+  }
+
+
+}
+
+/*
   public void addSong(Song newSong) {
     Songst.add(i, newSong);
     i = i + 1;
@@ -29,7 +50,8 @@ public class Albums extends Songs {
   public String toString() {
     return name + " " + Songst;
   }
-}
+*/
+
 
 
 /*

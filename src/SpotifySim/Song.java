@@ -15,7 +15,6 @@ public class Song {
   private boolean favourites;
   //private ArrayList<Song> Favourites;
 
-
   public Song(String newName, String newArtist, String newRelease, String newPlaylist, String newAlbum, boolean newFavourites) {
     name = newName;
     artist = newArtist;
@@ -23,6 +22,8 @@ public class Song {
     release = newRelease;
     favourites = newFavourites;
   }
+
+  /*
 
   public void favourites(Song song, Favourites favourite) {
     if(favourites == false) {
@@ -34,6 +35,7 @@ public class Song {
   public void unfavourite() {
     favourite = false;
   }
+  */
 
   public String getName() {
     return name;
@@ -43,15 +45,15 @@ public class Song {
     return artist;
   }
 
-  public getRelease() {
+  public String getRelease() {
     return release;
   }
 
-  public getPlaylist() {
+  public String getPlaylist() {
     return playlist;
   }
 
-  public getAlbum() {
+  public String getAlbum() {
     return release;
   }
 
@@ -142,4 +144,3 @@ public class Song {
   */
 
 
-}

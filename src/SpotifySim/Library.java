@@ -17,23 +17,23 @@ public abstract class Library {
     name = newName;
   }
 
-  public ArrayList getSongs() {
-    return Songs;
+  public ArrayList getLibrary() {
+    return Library;
   }
 
   public ArrayList addSong(Song newSong) {
-    Songs.add(i, newSong);
+    Library.add(i, newSong);
     i = i + 1;
-    return Songs
+    return Library;
   }
   
   public void removeSong(Song song) {
     Song check;
 
-    for(int ii = 0; ii < Songs.size(); ii++) {
-      check = Songs.get(ii);
+    for(int ii = 0; ii < Library.size(); ii++) {
+      check = Library.get(ii);
       if(check == song) {
-        Songs.remove(ii);
+        Library.remove(ii);
         break;
       }
     }

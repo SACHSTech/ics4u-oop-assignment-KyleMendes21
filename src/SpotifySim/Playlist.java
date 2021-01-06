@@ -11,12 +11,11 @@ public class Playlist extends Library {
     super(newName);
   }
 
-  public ArrayList getSongs() {
-    return super.getSongs();
+  public ArrayList getLibrary() {
+    return super.getLibrary();
   }
 
   public ArrayList addSong(Song newSong, Playlist collection) {
-
     return super.addSong(newSong);
   }
 
@@ -33,7 +32,7 @@ public class Playlist extends Library {
   }
 
   public String toString() {
-    return super.name + " " + super.getSongs();
+    return super.name + " " + super.getLibrary();
   }
 }
 
