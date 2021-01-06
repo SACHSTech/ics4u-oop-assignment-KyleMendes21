@@ -15,7 +15,7 @@ public class Song {
   //private ArrayList<Song> Favourites;
 
 
-  public Song(String newName, String newArtist, String newPlaylist, String newRelease, boolean isfavourites) {
+  public Song(String newName, String newArtist, String newRelease, String newPlaylist, boolean isfavourites) {
     name = newName;
     artist = newArtist;
     playlist = newPlaylist;
