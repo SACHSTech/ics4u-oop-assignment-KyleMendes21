@@ -11,7 +11,7 @@ public class Spotify {
      BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
 
      String inputUser;
-     String inputPass;
+     String inputPass; 
      int choice = 50004040;
      String choice2;
      int iii = 0;
