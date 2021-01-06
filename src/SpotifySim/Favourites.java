@@ -1,3 +1,4 @@
+/*
 package SpotifySim;
 import java.util.ArrayList;
 import java.io.*;
@@ -11,7 +12,7 @@ public class Favourites extends Playlist {
   public Favourite() {
     super("Fav");
   }
-*/
+
 
   public ArrayList addSong(Song newSong, Favourites fav){
     newSong.favourites(newSong, fav);

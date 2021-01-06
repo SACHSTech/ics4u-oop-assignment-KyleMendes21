@@ -2,19 +2,20 @@ package SpotifySim;
 import java.io.*;
 import java.util.ArrayList;
 import SpotifySim.Song;
-import SpotifySim.Songs;
+import SpotifySim.Library;
 
 public class Albums extends Library {
   private String name;
   private String artist;
   private ArrayList<Song> Library = new ArrayList<Song>();
 
-  public Albums(String newName, String newArtist){
-    super(newName, newArtist);
+  public Albums(String setName, String newArtist){
+    super(setName);
+    artist = newArtist;
   }
 
   public String getName() {
-    return name;
+    return super.getName();
   }
 
   public String getArtist() {
@@ -31,7 +32,7 @@ public class Albums extends Library {
   }
 
   public String toString() {
-    return name + " " + Library;
+    return super.getName() + " by " + artist + " " + Library;
   }
 
 

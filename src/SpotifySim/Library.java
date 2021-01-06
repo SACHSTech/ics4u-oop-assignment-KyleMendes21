@@ -9,8 +9,12 @@ public abstract class Library {
   private int i = 0;
   private ArrayList <Song> Library = new ArrayList<Song>();
 
-  public Library(String newName) {
-    name = newName;
+  public Library(String setName) {
+    name = setName;
+  }
+
+  public String getName() {
+    return name;
   }
 
   public void setName(String newName) {

@@ -1,10 +1,10 @@
 package SpotifySim;
 import java.io.*;
-import SpotifySim.Songs;
+import SpotifySim.Library;
 import SpotifySim.Albums;
 import SpotifySim.Playlist;
 import java.util.ArrayList;
-import SpotifySim.Favourites;
+//import SpotifySim.Favourites;
 
 public class Song {
   private String name;
@@ -18,8 +18,9 @@ public class Song {
   public Song(String newName, String newArtist, String newRelease, String newPlaylist, String newAlbum, boolean newFavourites) {
     name = newName;
     artist = newArtist;
-    playlist = newPlaylist;
     release = newRelease;
+    playlist = newPlaylist;
+    album = newAlbum;
     favourites = newFavourites;
   }
 
@@ -54,7 +55,7 @@ public class Song {
   }
 
   public String getAlbum() {
-    return release;
+    return album;
   }
 
   public boolean getFavourites() {
@@ -62,7 +63,14 @@ public class Song {
   }
 
   public String toString() {
-    return name + " by " + artist + " released in " + release + " is in the playlist " + playlist + " and it is in the album " + album;
+    if (album.equals("NONE")) {
+      return getName() + " by " + getArtist() + " released in " + getRelease() + " is in the playlist " + getPlaylist();
+    }
+    if (playlist.equals("NONE")) {
+      return getName() + " by " + getArtist() + " released in " + getRelease() + " is in the album " + getAlbum();
+    }
+    return getName() + " by " + getArtist() + " released in " + getRelease() + " is in the playlist " + getPlaylist() + " and it is in the album GOOD " + getAlbum();
+
   }
 }
 

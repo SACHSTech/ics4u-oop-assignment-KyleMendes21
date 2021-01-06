@@ -3,12 +3,12 @@ import java.io.*;
 import java.util.ArrayList;
 import SpotifySim.Song;
 import SpotifySim.Library;
-import Spotify.User;
+//import Spotify.User;
 
 public class Playlist extends Library {
 
-  public Playlist(String newName) {
-    super(newName);
+  public Playlist(String setName) {
+    super(setName);
   }
 
   public ArrayList getLibrary() {
@@ -24,15 +24,15 @@ public class Playlist extends Library {
   }
 
   public String getName() {
-    return super.getName();
+    return getName();
   }
 
   public void setName(String newName) {
-    return super.setName(newName);
+    super.setName(newName);
   }
 
   public String toString() {
-    return super.name + " " + super.getLibrary();
+    return super.getName() + " " + super.getLibrary();
   }
 }
 
