@@ -1,4 +1,41 @@
-package Spotify
+package SpotifySim;
+import java.io.*;
+import java.util.ArrayList;
+import SpotifySim.Song;
+import SpotifySim.Library;
+import Spotify.User;
+
+public class Playlist extends Library {
+
+  public Playlist(String newName) {
+    super(newName);
+  }
+
+  public ArrayList getSongs() {
+    return super.getSongs();
+  }
+
+  public ArrayList addSong(Song newSong, Playlist collection) {
+
+    return super.addSong(newSong);
+  }
+
+  public void removeSong(Song song) {
+    super.removeSong(song);
+  }
+
+  public String getName() {
+    return super.getName();
+  }
+
+  public void setName(String newName) {
+    return super.setName(newName);
+  }
+
+  public String toString() {
+    return super.name + " " + super.getSongs();
+  }
+}
 
 /*package SpotifySim;
 import java.util.ArrayList;
