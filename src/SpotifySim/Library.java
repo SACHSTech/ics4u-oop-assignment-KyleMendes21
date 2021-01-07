@@ -41,9 +41,5 @@ public abstract class Library {
         break;
       }
     }
-  }
-
-
- // public abstract ArrayList getSongs();
-  
+  }  
 }

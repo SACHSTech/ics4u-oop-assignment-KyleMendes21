@@ -25,6 +25,6 @@ public class Episode extends Song{
   }
 
   public String toString(){
-    return getName() + " " + getArtist() + " " + " " + getPodcast() + " " + getRelease();
+    return getName() + " by " + getArtist() + " released in " + getRelease();
   }
 }

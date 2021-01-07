@@ -34,7 +34,7 @@ public class Spotify {
     System.out.print("Password: ");
     inputPass = keyboard.readLine();
 
-    // Songs
+    // Create Songs
     Song Spirits = new Song("Spirits", "Strumbellas", "2016", "New", "NONE");
     Song Selfish = new Song("Selfish", "Madison Beer", "February 2020", "Chilling", "NONE");
     Song Easy = new Song("Easy", "Camilla Cabello", "October 2019", "New", "NONE");
@@ -44,12 +44,12 @@ public class Spotify {
     Song Mad = new Song("Mad at Disney", "Salem ilese", "July 2020", "Cool Stuff", "NONE");
     Song ThisCity = new Song("This City", "Sam Fischer", "January 2018", "Cool Stuff", "NONE");
 
-    // Album Songs
+    // Create Album Songs
     Song Cool = new Song("Cool", "Dua Lipa", "March 2020", "NONE", "Future Nostalgia");
     Song Physical = new Song("Physical", "Dua Lipa", "March 2020", "NONE", "Future Nostalgia");
     Song Hallucinate = new Song("Hallucinate", "Dua Lipa", "March 2020", "NONE", "Future Nostalgia");
 
-    // Episodes
+    // Create Episodes
     Episode ep1 = new Episode("1 Million from snapchat", "View with David Dobrik", "May 2020", "Podcast", "NONE");
     Episode ep2 = new Episode("Pizza company", "View with David Dobrik", "June 2020", "Podcast", "NONE");
     Episode ep3 = new Episode("Doubling the bank", "View with David Dobrik", "April 2020", "Podcast", "NONE");
