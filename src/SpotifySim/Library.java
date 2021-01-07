@@ -3,11 +3,10 @@ import SpotifySim.Song;
 import java.util.ArrayList;
 import java.io.*;
 
-public abstract class Library {
+public class Library {
 
   // instance variables
   private String name;
-  private int i = 0;
   private ArrayList <Song> Library = new ArrayList<Song>();
 
   /** 
@@ -28,6 +27,11 @@ public abstract class Library {
     return name;
   }
 
+  /**
+  * Setter method that will give newName value
+  *
+  * @param newName name of the song
+  */
   public void setName(String newName) {
     name = newName;
   }
@@ -41,12 +45,21 @@ public abstract class Library {
     return Library;
   }
 
+  /**
+  * Adds song to array library list
+  *
+  * @param newSong the name of the instance of the Song class that will be added
+  */
   public ArrayList addSong(Song newSong) {
-    Library.add(i, newSong);
-    i = i + 1;
+    Library.add(newSong);
     return Library;
   }
   
+  /**
+  * Removes song from array library list
+  *
+  * @param song the name of the instance of the Song class that will be removed
+  */
   public void removeSong(Song song) {
     Song check;
 

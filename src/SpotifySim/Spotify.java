@@ -175,7 +175,7 @@ public class Spotify {
       }
     }
     
-    System.out.println("Logging off. Nice seeing you 666!");
+    System.out.println("Logging off. Nice seeing you!");
 
 /*
     User user1 = new User("KyleM21", "Hello123");

@@ -17,23 +17,6 @@ public class Playlist extends Library {
   }
 
   /** 
-  * Getter method that returns the library array list 
-  * 
-  * @return Library array list
-  */
-  public ArrayList getLibrary() {
-    return super.getLibrary();
-  }
-
-  public ArrayList addSong(Song newSong, Playlist collection) {
-    return super.addSong(newSong);
-  }
-
-  public void removeSong(Song song) {
-    super.removeSong(song);
-  }
-
-  /** 
   * Gettor method that returns getName() 
   *
   * @return getName()
@@ -42,8 +25,41 @@ public class Playlist extends Library {
     return getName();
   }
 
+  /**
+  * Setter method that will give newName value
+  *
+  * @param newName name of the song
+  */
   public void setName(String newName) {
     super.setName(newName);
+  }
+  
+  /** 
+  * Getter method that returns the library array list 
+  * 
+  * @return Library array list
+  */
+  public ArrayList getLibrary() {
+    return super.getLibrary();
+  }
+
+  /**
+  * Adds song to array library list
+  *
+  * @param newSong the name of the instance of the Song class that will be added
+  * @param collection the name of the instance of the Playlist class 
+  */
+  public ArrayList addSong(Song newSong, Playlist collection) {
+    return super.addSong(newSong);
+  }
+
+  /**
+  * Removes song from array library list
+  *
+  * @param song the name of the instance of the Song class that will be removed
+  */
+  public void removeSong(Song song) {
+    super.removeSong(song);
   }
 
   /** 

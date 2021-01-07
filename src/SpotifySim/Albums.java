@@ -40,6 +40,11 @@ public class Albums extends Library {
     return artist;
   }
 
+  /**
+  * Adds song to array library list
+  *
+  * @param newSong the name of the instance of the Song class that will be added
+  */
   public ArrayList addSong(Song newSong) {
     Library = super.addSong(newSong);
     return Library;
@@ -64,8 +69,6 @@ public class Albums extends Library {
   public String toString() {
     return super.getName() + " by " + artist + " " + Library;
   }
-
-
 }
 
 /*

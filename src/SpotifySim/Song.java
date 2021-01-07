@@ -92,7 +92,7 @@ public class Song {
     if (playlist.equals("NONE")) {
       return getName() + " by " + getArtist() + " released in " + getRelease() + " is in the album " + getAlbum();
     }
-    return getName() + " by " + getArtist() + " released in " + getRelease() + " is in the playlist " + getPlaylist() + " and it is in the album GOOD " + getAlbum();
+    return getName() + " by " + getArtist() + " released in " + getRelease() + " is in the playlist " + getPlaylist() + " and it is in the album " + getAlbum();
 
   }
 }

@@ -10,11 +10,11 @@ public class Episode extends Song{
   * @param setName - a string that shows the name of the episode
   * @param setProducer - a string that shows the producer of the episode
   * @param setRelease - a string that shows the release date
-  * @param setPodcast - a string that shows which podcast the episode belongs
+  * @param setHost - a string that shows which host the episode belongs
   * @param setAlbum - a string that shows the album the episode is in
   */
-  public Episode(String setName, String setProducer, String setRelease, String setPodcast, String setAlbum){
-    super(setName, setProducer, setRelease, setPodcast, setAlbum);
+  public Episode(String setName, String setHost, String setRelease, String setPodcast, String setAlbum){
+    super(setName, setHost, setRelease, setPodcast, setAlbum);
   }
 
   /** 
@@ -27,11 +27,11 @@ public class Episode extends Song{
   }
 
   /** 
-  * Getter method that returns the producer 
+  * Getter method that returns the host 
   * 
-  * @return producer
+  * @return host
   */
-  public String getProducer(){
+  public String getHost(){
     return super.getArtist();
   }
 
@@ -57,7 +57,7 @@ public class Episode extends Song{
   * toString method that returns podcast episode information 
   *
   * @param getName() - a string that shows the name of the episode
-  * @param getArtist() - a string that shows the producer of the episode
+  * @param getArtist() - a string that shows the host of the episode
   * @param getRelease() - a string that shows the release month of the episode
   */
   public String toString(){
