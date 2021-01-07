@@ -5,14 +5,25 @@ import java.io.*;
 
 public abstract class Library {
 
+  // instance variables
   private String name;
   private int i = 0;
   private ArrayList <Song> Library = new ArrayList<Song>();
 
+  /** 
+  * Library constructor. Creates an instance of the object for Library. 
+  *
+  * @param name - a string that shows the name of the song
+  */
   public Library(String setName) {
     name = setName;
   }
 
+  /** 
+  * Getter method that returns the name of the song 
+  * 
+  * @return name
+  */
   public String getName() {
     return name;
   }
@@ -21,6 +32,11 @@ public abstract class Library {
     name = newName;
   }
 
+  /** 
+  * Getter method that returns the library array list 
+  * 
+  * @return Library array list
+  */
   public ArrayList getLibrary() {
     return Library;
   }
