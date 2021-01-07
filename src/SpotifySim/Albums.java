@@ -5,7 +5,7 @@ import SpotifySim.Song;
 import SpotifySim.Library;
 
 public class Albums extends Library {
-  private String name;
+  //private String name;
   private String artist;
   private ArrayList<Song> Library = new ArrayList<Song>();
 

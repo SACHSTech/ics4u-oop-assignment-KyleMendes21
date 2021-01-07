@@ -12,16 +12,16 @@ public class Song {
   private String playlist;
   private String album;
   private String release;
-  private boolean favourites;
+  //private boolean favourites;
   //private ArrayList<Song> Favourites;
 
-  public Song(String newName, String newArtist, String newRelease, String newPlaylist, String newAlbum, boolean newFavourites) {
+  public Song(String newName, String newArtist, String newRelease, String newPlaylist, String newAlbum) {
     name = newName;
     artist = newArtist;
     release = newRelease;
     playlist = newPlaylist;
     album = newAlbum;
-    favourites = newFavourites;
+    //favourites = newFavourites;
   }
 
   /*
@@ -56,10 +56,6 @@ public class Song {
 
   public String getAlbum() {
     return album;
-  }
-
-  public boolean getFavourites() {
-    return favourites;
   }
 
   public String toString() {
