@@ -17,7 +17,7 @@ public class Albums extends Library {
   * @param artist - a string that shows the artist of the song
 
   */
-  public Albums(String setName, String newArtist){
+  public Albums(String setName, String newArtist) {
     super(setName);
     artist = newArtist;
   }

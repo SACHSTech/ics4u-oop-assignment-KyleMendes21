@@ -2,7 +2,7 @@ package SpotifySim;
 import java.io.*;
 import SpotifySim.Song;
 
-public class Episode extends Song{
+public class Episode extends Song {
 
   /** 
   * Episode constructor. Creates an instance of the object for Episode. 
@@ -13,7 +13,7 @@ public class Episode extends Song{
   * @param setHost - a string that shows which host the episode belongs
   * @param setAlbum - a string that shows the album the episode is in
   */
-  public Episode(String setName, String setHost, String setRelease, String setPodcast, String setAlbum){
+  public Episode(String setName, String setHost, String setRelease, String setPodcast, String setAlbum) {
     super(setName, setHost, setRelease, setPodcast, setAlbum);
   }
 
@@ -22,7 +22,7 @@ public class Episode extends Song{
   * 
   * @return name
   */
-  public String getName(){
+  public String getName() {
     return super.getName();
   }
 
@@ -31,7 +31,7 @@ public class Episode extends Song{
   * 
   * @return host
   */
-  public String getHost(){
+  public String getHost() {
     return super.getArtist();
   }
 
@@ -40,7 +40,7 @@ public class Episode extends Song{
   * 
   * @return the playlist
   */
-  public String getPodcast(){
+  public String getPodcast() {
     return super.getPlaylist();
   }
 
@@ -49,7 +49,7 @@ public class Episode extends Song{
   * 
   * @return release date
   */
-  public String getRelease(){
+  public String getRelease() {
     return super.getRelease();
   }
 
@@ -60,7 +60,7 @@ public class Episode extends Song{
   * @param getArtist() - a string that shows the host of the episode
   * @param getRelease() - a string that shows the release month of the episode
   */
-  public String toString(){
+  public String toString() {
     return getName() + " by " + getArtist() + " released in " + getRelease();
   }
 }

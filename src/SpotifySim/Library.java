@@ -61,14 +61,12 @@ public class Library {
   * @param song the name of the instance of the Song class that will be removed
   */
   public void removeSong(Song song) {
-    Song check;
 
     for(int ii = 0; ii < Library.size(); ii++) {
-      check = Library.get(ii);
-      if(check == song) {
+      if(Library.get(ii).equals(song)) {
         Library.remove(ii);
-        break;
       }
+    
     }
   }  
 }
